@@ -156,7 +156,7 @@ html {
 
 .service {
   background-color: white;
-  height: 700px;
+  height: 100vh;
   display: flex;
   width: 100%;
   justify-content: space-around;
