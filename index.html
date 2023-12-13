@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>ASDict</title>
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Patrick+Hand"
+    />
+    <script
+      src="https://kit.fontawesome.com/aef60680da.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!--Background-->
+    <style>
+      body {
+        background-image: url("assets/img/Start.png");
+        background-size: cover;
+        background-repeat: repeat;
+        background-attachment: fixed;
+        margin: 0;
+      }
+    </style>
+
+    <!-- Navigation (Stays on Top) -->
+    <div id="header">
+      <div class="menu">
+        <a href="#content" class="home-button dark"
+          ><img
+            class="icon"
+            src="assets/img/appicon.svg"
+            style="height: 50px"
+          />ASDict</a
+        >
+      </div>
+      <div class="bar menu">
+        <a href="#content" class="button dark">Download</a>
+        <a href="#about" class="button dark">About</a>
+        <a href="#first" class="button dark">Service</a>
+        <a href="#contact" class="button dark">Contact</a>
+      </div>
+    </div>
+
+    <div id="content">
+      <!--Diplay/Home-->
+      <div id="display">
+        <label
+          style="font-size: 72px; letter-spacing: 36px; margin-right: -36px"
+        >
+          ASDict</label
+        >
+        <label style="letter-spacing: 6px; margin-right: -6px"
+          >A Thesaurus app for you</label
+        >
+        <!--Big display image-->
+        <img
+          src="assets/img/displaypic.png"
+          style="
+            position: absolute;
+            top: 30px;
+            right: 50%;
+            left: 50%;
+            transform: translateX(-50%) scale(0.7);
+          "
+        />
+      </div>
+      <!--Download-->
+      <div class="download">
+        <button class="download-button button dark">
+          Download for Desktop
+        </button>
+        <button class="download-button button dark">
+          Download for Android
+        </button>
+      </div>
+
+      <!--About us-->
+      <div id="about" class="trans-sheet">
+        <div class="para" style="width: 30%">
+          <label style="font-size: 56px"> About us </label>
+          <label>
+            Welcome to our thesaurus mobile and desktop app, your comprehensive
+            companion for expanding vocabulary and refining language skills. We
+            offer a seamless experience in exploring synonyms and antonyms,
+            aiding you in expressing yourself more precisely and creatively.
+          </label>
+        </div>
+        <div class="menu">
+          <a href="#first" class="button menu-button light">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            Versatile
+          </a>
+          <a href="#second" class="button menu-button light">
+            <i class="fa-regular fa-user"></i>
+            Personalize
+          </a>
+          <a href="#third" class="button menu-button light">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+            Daily Discovery
+          </a>
+        </div>
+      </div>
+
+      <!--Service-->
+      <div id="first" class="service">
+        <img src="assets/img/Placeholder.png" style="height: 60%" />
+        <div class="para right">
+          <label class="text-subject"> Lookup what you need </label>
+          <label>
+            Effortlessly delve into a wealth of words with our intuitive search
+            feature. Find synonyms and antonyms quickly, enabling you to enhance
+            your writing, enrich conversations, and broaden your linguistic
+            horizons.
+          </label>
+        </div>
+      </div>
+
+      <div id="second" class="service dark">
+        <div class="para left">
+          <label class="text-subject"> Save Words </label>
+          <label>
+            Personalize your learning journey by saving your favorite words for
+            later reference. Create custom lists or categorize words based on
+            themes, projects, or personal preferences, ensuring easy access to
+            your vocabulary arsenal.
+          </label>
+        </div>
+        <img src="assets/img/Placeholder.png" style="height: 60%" />
+      </div>
+
+      <div id="third" class="service">
+        <img src="assets/img/Placeholder.png" style="height: 60%" />
+        <div class="para right">
+          <label class="text-subject">Random Word of the Day</label>
+          <label>
+            Embark on a daily linguistic adventure with our "Random Word of the
+            Day" feature. Enrich your vocabulary one word at a time, accompanied
+            by its synonyms and antonyms, providing a delightful and educational
+            start to your day.
+          </label>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var scrollLinks = document.querySelectorAll('a[href^="#"]');
+
+    scrollLinks.forEach(function (link) {
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        var targetId = this.getAttribute("href").substring(1);
+        var targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop,
+            behavior: "smooth",
+          });
+        }
+      });
+    });
+  });
+</script>
