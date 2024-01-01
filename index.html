@@ -34,14 +34,14 @@
           ><img
             class="icon"
             src="assets/img/appicon.svg"
-            style="height: 50px"
+            height="80%"
           />ASDict</a
         >
       </div>
       <div class="bar menu">
         <a href="#content" class="button dark">Download</a>
         <a href="#about" class="button dark">About</a>
-        <a href="#first" class="button dark">Service</a>
+        <a href="#update" class="button dark">Service</a>
         <a href="#contact" class="button dark">Contact</a>
       </div>
     </div>
@@ -50,24 +50,25 @@
       <!--Diplay/Home-->
       <div id="display">
         <label
-          style="font-size: 72px; letter-spacing: 36px; margin-right: -36px"
+          style="font-size: 6.5vw; letter-spacing: 5vw; margin-right: -5vw"
         >
           ASDict</label
         >
-        <label style="letter-spacing: 6px; margin-right: -6px"
+        <label style=" font-size: 2vw; letter-spacing: 1vw; margin-right: -1vw"
           >A Thesaurus app for you</label
         >
         <!--Big display image-->
         <img
           src="assets/img/displaypic.png"
-          style="
-            position: absolute;
-            top: 30px;
-            right: 50%;
-            left: 50%;
-            transform: translateX(-50%) scale(0.7);
-          "
+          style="height: 20vw; top: 30px; right: 50%; left: 50%; margin-top: 2vw;"
         />
+
+        <label class="guide" style="margin-top: -1vw;">
+          <label>Need help? Click to check </label> 
+          <a href="#update">update</a>
+          <label> or </label>
+          <a href=""> download tutorial</a>
+        </label>
       </div>
       <!--Download-->
       <div class="download">
@@ -81,8 +82,8 @@
 
       <!--About us-->
       <div id="about" class="trans-sheet">
-        <div class="para" style="width: 30%">
-          <label style="font-size: 56px"> About us </label>
+        <div class="para">
+          <label class="aboutlable"> About us </label>
           <label>
             Welcome to our thesaurus mobile and desktop app, your comprehensive
             companion for expanding vocabulary and refining language skills. We
@@ -90,7 +91,7 @@
             aiding you in expressing yourself more precisely and creatively.
           </label>
         </div>
-        <div class="menu" style="margin-top: 35px;">
+        <div class="menu" style="margin-top: 35px; justify-content: center;" >
           <a href="#first" class="button menu-button light">
             <i class="fa-solid fa-magnifying-glass"></i>
             Versatile
@@ -108,7 +109,7 @@
 
       <!--Service-->
       <div id="first" class="service">
-        <img src="assets/img/Placeholder.png" style="height: 60%" />
+        <img src="assets/img/syno_screen.jpg" />
         <div class="para right">
           <label class="text-subject"> Lookup what you need </label>
           <label>
@@ -130,11 +131,11 @@
             your vocabulary arsenal.
           </label>
         </div>
-        <img src="assets/img/Placeholder.png" style="height: 60%" />
+        <img src="assets/img/bookmark_screen.jpg"/>
       </div>
 
       <div id="third" class="service">
-        <img src="assets/img/Placeholder.png" style="height: 60%" />
+        <img src="assets/img/home_screen.jpg"/>
         <div class="para right">
           <label class="text-subject">Random Word of the Day</label>
           <label>
@@ -144,6 +145,21 @@
             start to your day.
           </label>
         </div>
+      </div>
+
+      <!--Update-->
+      <div id="update" class="download">
+        <button class="download-button button dark">
+          Update for Desktop
+        </button>
+        <button class="download-button button dark">
+          Update for Android
+        </button>
+      </div>
+
+      <!--Contact-->
+      <div id="contact">
+        <label>abc</label>
       </div>
     </div>
   </body>

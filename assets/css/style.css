@@ -4,25 +4,48 @@
 }
 
 html {
+  max-width: 100%;
   margin: 0 auto;
   font-family: "Patrick Hand", sans-serif;
-  font-size: larger;
+}
+
+/* If the screen size is 601px wide or more */
+@media screen and (min-width: 601px) {
+  html {
+    font-size: large;
+  }
+}
+
+/* If the screen size is 600px wide or less */
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 14px;
+  }
+
+  .bar.menu a {
+    width: 20px;
+  }
 }
 
 #header {
   background-color: var(--secondary);
   position: fixed;
-  width: -webkit-fill-available;
+  width: 100vw;
   height: 65px;
   top: 0;
+  right: 0;
+  left: 0;
   overflow: hidden;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 60px;
   z-index: 2;
 }
 
+#header .menu {
+  margin-right: 5vw;
+  margin-left: 5vh;
+}
 #content {
   display: flex;
   flex-direction: column;
@@ -86,6 +109,11 @@ html {
 
 .menu {
   display: flex;
+  max-width: 100%;
+}
+
+.bar.menu a {
+  width: 85px;
 }
 
 #display {
@@ -97,21 +125,24 @@ html {
   flex-direction: column;
   align-items: center;
   color: white;
+  height: 25vw;
 }
 
 .download-button {
-  padding: 18px 3%;
+  padding: 1vw 3%;
   font-family: "Patrick Hand", sans-serif;
   font-size: larger;
-  width: 210px;
+  width: 25vw;
+  max-width: 210px;
   margin: 0px 75px;
   z-index: 1;
   border-radius: 8px;
+  margin:  3vw;
+  margin-top: 12vw;
 }
 
 .download {
   display: flex;
-  margin: 190px auto;
   margin-bottom: 25px;
   justify-content: center;
 }
@@ -119,7 +150,6 @@ html {
 .trans-sheet {
   width: 100%;
   padding-bottom: 50px;
-  height: fit-content;
   background: rgb(250, 196, 199);
   background: linear-gradient(
     180deg,
@@ -129,7 +159,7 @@ html {
 }
 
 #about {
-  padding-top: 95px;
+  padding-top: 6vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -145,9 +175,10 @@ html {
 
 .menu-button {
   font-size: 24px;
-  margin: 32px;
+  margin: 1vw;
   padding: 3%;
-  width: 220px;
+  width: 27vw;
+  max-width: 220px;
 }
 
 .menu-button i {
@@ -161,6 +192,10 @@ html {
   width: 100%;
   justify-content: space-around;
   align-items: center;
+}
+
+.para {
+  width: 30%;
 }
 
 .para .text-subject {
@@ -184,3 +219,72 @@ html {
   border-left-style: dashed;
   border-left-width: 3px;
 }
+
+.aboutlable {
+  font-size: 56px;
+}
+
+.guide {
+  color: var(--secondary);
+  z-index: 2;
+  padding: 1vw;
+}
+
+#update {
+  margin-top: -5vw;
+}
+
+.service img {
+  height: 100vw;
+  max-height: 70%;
+  margin: 20px;
+}
+
+#contact {
+  background-color: var(--secondary);
+  
+}
+
+/* If the screen size is 600px wide or less */
+@media screen and (max-width: 600px) {
+
+  .bar.menu a {
+    width: 14vw;
+  }
+
+  #header .menu {
+    margin-right: 1vw;
+    margin-left: 1vh;
+  }
+
+  .download-button {
+    font-size: smaller;
+  }
+
+  .aboutlable {
+    font-size: 32px;
+  }
+
+  .para {
+    width: 50%;
+  }
+  .guide {
+    font-size: 7px;
+  }
+
+  .para label {
+    font-size: 12px;
+  }
+  .para .text-subject {
+    font-size: 24px;
+  }
+}
+
+/* If the screen size is 601px wide or more */
+@media screen and (min-width: 601px) {
+  .trans-sheet {
+    height: 100vh;
+  }
+}
+
+
