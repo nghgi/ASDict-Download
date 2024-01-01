@@ -261,10 +261,6 @@ html {
     font-size: smaller;
   }
 
-  .aboutlable {
-    font-size: 32px;
-  }
-
   .para {
     width: 50%;
   }
@@ -277,6 +273,17 @@ html {
   }
   .para .text-subject {
     font-size: 24px;
+  }
+
+  .menu-button {
+    font-size: 18px;
+    width: 24vw;
+    padding: 6px 0px;
+    margin: 3vw;
+  }
+
+  #about .para .aboutlable {
+    font-size: 32px;
   }
 }
 
