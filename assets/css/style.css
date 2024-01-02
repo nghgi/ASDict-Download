@@ -132,8 +132,9 @@ html {
   padding: 1vw 3%;
   font-family: "Patrick Hand", sans-serif;
   font-size: larger;
-  width: 25vw;
+  width: 8vw;
   max-width: 210px;
+  min-width: 60px;
   margin: 0px 75px;
   z-index: 1;
   border-radius: 8px;
